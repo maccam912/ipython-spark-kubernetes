@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: spark-master
-          image: gcr.io/perceptive-tape-128815/spark:v161
+          image: maccam912/spark
           command: ["/start-master"]
           ports:
             - containerPort: 7077

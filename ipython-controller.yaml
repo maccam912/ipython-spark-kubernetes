@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: ipython-master
-          image: gcr.io/perceptive-tape-128815/jupyter:v161
+          image: maccam912/jupyter
           #command: ["/start-master"]
           ports:
             - containerPort: 8888 
