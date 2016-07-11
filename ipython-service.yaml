@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ipython-master
+spec:
+  ports:
+    - port: 8888 
+      targetPort: 8888 
+  selector:
+    component: ipython-master

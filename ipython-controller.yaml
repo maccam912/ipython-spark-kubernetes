@@ -1,0 +1,22 @@
+kind: ReplicationController
+apiVersion: v1
+metadata:
+  name: ipython-controller
+spec:
+  replicas: 1
+  selector:
+    component: ipython-master
+  template:
+    metadata:
+      labels:
+        component: ipython-master
+    spec:
+      containers:
+        - name: ipython-master
+          image: gcr.io/perceptive-tape-128815/jupyter:v161
+          #command: ["/start-master"]
+          ports:
+            - containerPort: 8888 
+          resources:
+            requests:
+              cpu: 100m
