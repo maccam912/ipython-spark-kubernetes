@@ -1,0 +1,6 @@
+[submodule "application-images"]
+  path = application-images
+  url = https://github.com/maccam912/application-images
+[submodule "docker-stacks"]
+  path = docker-stacks
+  url = https://github.com/maccam912/docker-stacks
